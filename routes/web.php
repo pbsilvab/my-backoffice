@@ -14,6 +14,18 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/auth', function(){
+
+    $meli = new \App\Meli('1764945386142380', 'KAX31gq2Ul7aDkHkz1vrU49xf2L7P8cg');
+
+    //$user = $meli->authorize($_GET['code'], 'http://somecallbackurl');
+
+    dd($_GET);
+    
+});
+
+
 Route::middleware(['cors'])->group(function () {
 
     Route::get('/stats', 'RatesController@getVotesSum');
