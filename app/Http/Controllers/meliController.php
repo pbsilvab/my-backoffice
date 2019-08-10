@@ -8,8 +8,8 @@ class meliController extends Controller
 {
     public function incoming(Request $request){
 
-        Log::debug($reques->all());
-        dd($reques->all());
+        Log::debug($request->all());
+        dd($request->all());
 
     }
 }
