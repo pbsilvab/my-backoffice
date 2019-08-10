@@ -10,7 +10,7 @@ class meliController extends Controller
 
         Log::debug($request->all());
         
-        return true;
+        return response()->json(['status'=> 200, 'msg' => 'success']);
 
     }
 }
