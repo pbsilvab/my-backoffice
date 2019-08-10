@@ -9,7 +9,8 @@ class meliController extends Controller
     public function incoming(Request $request){
 
         Log::debug($request->all());
-        dd($request->all());
+        
+        return true;
 
     }
 }
